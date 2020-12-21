@@ -13101,7 +13101,7 @@ div#notebook {
 <h2 id="Table-of-Contents">Table of Contents<a class="anchor-link" href="#Table-of-Contents">&#182;</a></h2><ol>
 <li>Introduction </li>
 <li>Data Collection</li>
-<li>Data Preparation</li>
+<li>Data Processing</li>
 <li>Data Exploration</li>
 <li>Analysis and Hypothesis Testing</li>
 <li>Conclusions and Reflections</li>
@@ -13137,7 +13137,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is the data collection and preparation stage of the data life cycle. In this part, we collect data from websites, databases, CSV files, etc.</p>
+<p>This is the data collection stage of the data life cycle. In this part, we collect data from websites, databases, CSV files, etc.</p>
 <p>I will specifically be using a dataset from Kaggle that includes the percentage of voters who voted for Trump, the percentage of voters who voted for Biden, demographic information, coronavirus information, income information, and employment information by county. The dataset also includes the percentage of voters who voted for Trump and Clinton in the 2016 election.</p>
 <p>I will first be using the pandas library to read the data and put the data in a table known as a DataFrame. I will be using the .read_csv() function since the file is a .csv file.</p>
 <p>Here is the link to the pandas documentation: <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html">https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html</a> for further reading if you are interested.</p>
@@ -13551,6 +13551,20 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The next step of the data lifecycle is to explore and visualize our data. This allows us to discover potential patterns and find points of interest before analyzing the data.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.A-Histogram-and-Boxplot">4.A Histogram and Boxplot<a class="anchor-link" href="#4.A-Histogram-and-Boxplot">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p>Let's first examine our data more generally. We can make histograms and boxplots of the percentage of voters who voted for Biden. I will also be using the pyplot() function from the matplotlib library (<a href="https://matplotlib.org/3.3.3/api/_as_gen/matplotlib.pyplot.html">https://matplotlib.org/3.3.3/api/_as_gen/matplotlib.pyplot.html</a>) to add information (x-axis label, y-axis label, and title) to the graphs.</p>
 
 </div>
@@ -13628,7 +13642,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, I will examine the different factors to see if there is an association between them and the percentage of voters who voted for Joe Biden, the projected winner of the 2020 election. Specifically, I will look at the white population, income, income per capita, unemployment rate, poverty rate, and percentage of voters who voted for Hillary Clinton in 2016 of each county.</p>
+<h3 id="4.B-Regression-Plots">4.B Regression Plots<a class="anchor-link" href="#4.B-Regression-Plots">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now, I will examine different factors to see if there is an association between them and the percentage of voters who voted for Joe Biden. Specifically, I will look at the white population, income, income per capita, unemployment rate, poverty rate, and percentage of voters who voted for Hillary Clinton in 2016 of each county.</p>
 <p>I will be using the seaborn library (<a href="https://seaborn.pydata.org/">https://seaborn.pydata.org/</a>), a statistical data visualization library, to plot linear regression plots. I will also be using matplotlib to add information to the plots.</p>
 
 </div>
